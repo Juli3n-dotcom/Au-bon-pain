@@ -52,7 +52,7 @@ header {
 .menu__icon .menu__icon--one {
   content: "";
   display: block;
-  background-color: var(--light-black);
+  background-color: var(--light-white);
   height: 3px;
   width: 25px;
   position: relative;
@@ -63,7 +63,7 @@ header {
 .menu__icon .menu__icon--two {
   content: "";
   display: block;
-  background-color: var(--light-black);
+  background-color: var(--light-white);
   height: 3px;
   width: 15px;
   position: relative;
@@ -74,7 +74,7 @@ header {
 .menu__icon .menu__icon--three {
   content: "";
   display: block;
-  background-color: var(--light-black);
+  background-color: var(--light-white);
   height: 3px;
   width: 25px;
   position: relative;
@@ -123,4 +123,26 @@ header {
 .nav__list .nav__list--links {
   color: var(--light-white);
   font-size: 2rem;
+}
+
+.hero {
+  height: 100vh;
+  background: url("../img/bakery-1868925_1920.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero .hero__logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 998;
+}
+.hero .hero__logo.active {
+  display: none;
+}
+.hero .hero__logo img {
+  height: 400px;
+  width: 400px;
 }
