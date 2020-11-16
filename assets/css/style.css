@@ -162,13 +162,16 @@ header.sticky {
   height: auto;
   padding-bottom: 2rem;
 }
-
-.about .part__title {
+.part__title {
   text-align: center;
-  color: var(--light-white);
   padding-top: 3rem;
   font-family: var(--roboto);
   font-weight: 200;
+  color: var(--light-white);
+}
+
+.part__title .title__white {
+  color: var(--light-white);
 }
 
 .size__50 {
@@ -192,4 +195,92 @@ header.sticky {
   font-size: 16px;
   color: var(--light-white);
   font-family: var(--roboto);
+}
+
+.product {
+  text-align: center;
+  background-color: #000;
+}
+.product .part__title {
+  margin-bottom: 3rem;
+}
+/* .wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}*/
+
+.product__case {
+  min-height: 11rem;
+
+  /* padding: 50% 35px 35px 45px; */
+  padding: 50% 35px 35px 35px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 1rem;
+  box-shadow: inset 10px -2px 16px -11px #1a171b;
+  border-radius: 2%;
+}
+.product__case .product__name {
+  color: #fff;
+  font-family: var(--roboto);
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 2rem !important;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.product__case .product__label {
+  color: #fff;
+  font-size: 30px;
+}
+
+.carousel {
+  position: relative;
+  /* overflow: hidden; */
+}
+.carousel__item {
+  float: left;
+}
+.carousel__container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.carousel__container {
+  transition: transform 0.3s;
+  transform: translate3d(0, 0, 0);
+}
+
+.carousel__next,
+.carousel__prev {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: #fff url("../icon/chevron-right-solid.svg") center center
+    no-repeat;
+  color: #000;
+  border-radius: 50%;
+  background-size: 20px 20px;
+  top: 50%;
+  right: 0;
+  /* margin-top: -20%; */
+  cursor: pointer;
+  transition: transform 0.3s, opacity 0.3s;
+}
+.carousel__next:hover,
+.carousel__prev:hover {
+  transform: scale(1.2);
+}
+
+.carousel__prev {
+  right: auto;
+  left: 0;
+  background: #fff url("../icon/chevron-left-solid.svg") center center no-repeat;
+  background-size: 20px 20px;
+}
+
+.carousel__next--hidden,
+.carousel__prev--hidden {
+  opacity: 0;
 }
