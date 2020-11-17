@@ -34,16 +34,16 @@
                     <a href="#" class="nav__list--links">Accueil</a>
                 </li>
                 <li class="nav__list--items">
-                    <a href="#about" class="nav__list--links">Qui sommes nous?</a>
+                    <a href="#product" class="nav__list--links">Nos Pains</a>
                 </li>
                 <li class="nav__list--items">
-                    <a href="#product" class="nav__list--links">Nos Pains</a>
+                    <a href="#about" class="nav__list--links">Qui sommes nous?</a>
                 </li>
                 <li class="nav__list--items">
                     <a href="#value" class="nav__list--links">Nos Valeurs</a>
                 </li>
                 <li class="nav__list--items">
-                    <a href="" class="nav__list--links">Contact</a>
+                    <a href="#contact" class="nav__list--links">Contact</a>
                 </li>
             </ul>
         </div>
@@ -55,27 +55,6 @@
         <div class="hero__logo">
             <img src="assets/img/logo_white.png" alt="logo">
         </div>
-    </section>
-        
-    <section class="about" id="about">
-        <h2 class="part__title title__white">Qui somme nous ?</h2>
-
-        <div class="about__left size__50">
-            <div class="about__left--img">
-                <img src="assets/img/logo_white.png" alt="logo">
-            </div>
-        </div>
-
-        <div class="about__right size__50">
-            <div class="about__right--text">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Id molestias quidem similique deleniti nobis totam ratione fugiat,
-                    ea aliquam, natus tenetur nam ex unde. Velit ipsa inventore distinctio praesentium iste.
-                </p>
-            </div>
-        </div>
-        
     </section>
         
     <section class="product" id="product">
@@ -97,6 +76,34 @@
         </div>
 
     </section>
+
+    <section class="about" id="about">
+        <h2 class="part__title title__white">Qui somme nous ?</h2>
+    
+        <div class="about__container">
+            <div class="about__left size__50">
+                <div class="about__left--img">
+                    <img src="assets/img/logo_white.png" alt="logo">
+                </div>
+            </div>
+            
+            <div class="about__right size__50">
+                <div class="about__right--text">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Id molestias quidem similique deleniti nobis totam ratione fugiat,
+                        ea aliquam, natus tenetur nam ex unde. Velit ipsa inventore distinctio praesentium iste.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Id molestias quidem similique deleniti nobis totam ratione fugiat,
+                        ea aliquam, natus tenetur nam ex unde. Velit ipsa inventore distinctio praesentium iste.
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+    </section>
                
     <section class="value" id="value">
         <h2 class="part__title">Nos Valeurs</h2>
@@ -110,7 +117,7 @@
 
         <div class="values">
             <div class="values__container" v-for="item in values">
-                <div class="values__case" :style="{ backgroundImage: 'url(' + item.image.source + ')', }">
+                <div class="values__case" :style="{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),url(' + item.image.source + ')' }">
                     <h3 class="values__name">{{item.value}}</h3>
                     <div class="values__label">
                         <p>
@@ -130,10 +137,10 @@
         </p>
         <div class="contact__form">
             <form>
-                <input type="text" name="" placeholder="Full Name">
+                <input type="text" name="" placeholder="Votre Nom">
                 <input type="email" name="" placeholder="Email">
-                <textarea placeholder="Your Message"></textarea>
-                <button type="submit" class="form_btn" value="Send">Send</button>
+                <textarea placeholder="VotreMessage"></textarea>
+                <button type="submit" class="form_btn" value="Envoyer">Envoyer</button>
             </form>
         </div>
         <div class="contact__link">
@@ -172,7 +179,7 @@
     </section>
 
     <div class="copyright">
-        <p>Copyright 2020 Julien Quentier, All Right Reserved</p>
+        <p>Copyright 2020 <a href="https://www.julien-quentier.fr">Julien QUENTIER</a>, All Right Reserved</p>
     </div>
 
 </div> <!-- fin #app-->

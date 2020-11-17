@@ -25,7 +25,7 @@ header {
   z-index: 999;
 }
 header.sticky {
-  background: #000;
+  background: #111;
   /* padding: 20px 100px; */
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0, 1);
 }
@@ -138,7 +138,8 @@ header.sticky {
 
 .hero {
   height: 100vh;
-  background: url("../img/bakery-1868925_1920.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../img/bakery-1868925_1920.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -159,7 +160,7 @@ header.sticky {
 
 .about {
   width: 100%;
-  background-color: #000;
+  background-color: #111;
   height: auto;
   padding-bottom: 2rem;
 }
@@ -197,18 +198,18 @@ header.sticky {
   color: var(--light-white);
   font-family: var(--roboto);
 }
+.about__right--text p {
+  margin-bottom: 2rem;
+}
 
 .product {
   text-align: center;
-  background-color: #000;
+  background-color: #111;
+  overflow: hidden;
 }
 .product .part__title {
   margin-bottom: 3rem;
 }
-/* .wrapper {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}*/
 
 .presentation__text {
   padding: 1rem;
@@ -294,7 +295,7 @@ header.sticky {
 
 .value {
   text-align: center;
-  background-color: #000;
+  background-color: #111;
 }
 
 .values__case {
@@ -322,7 +323,7 @@ header.sticky {
 
 .contact {
   width: 100%;
-  background: #000;
+  background: #111;
 }
 
 .contact p {
@@ -335,6 +336,7 @@ header.sticky {
 .contact__form {
   min-width: 60%;
   margin-top: 2rem;
+  padding: 1rem;
 }
 .contact__form form {
   display: flex;
@@ -374,7 +376,7 @@ header.sticky {
 }
 
 .contact__form form .form_btn {
-  max-width: 100px;
+  max-width: 150px;
   background: var(--gold);
   cursor: pointer;
   text-transform: uppercase;
@@ -407,8 +409,41 @@ header.sticky {
 
 .copyright {
   background: #000;
-  color: #fff;
+  color: var(--light-white);
   text-align: center;
   padding: 10px;
   font-family: var(--oxygen);
+}
+.copyright a {
+  text-decoration: none;
+  color: var(--gold);
+}
+
+/* Responsive*/
+
+@media (max-width: 991px) {
+}
+
+@media (min-width: 700px) {
+  .about__container {
+    display: flex;
+    padding: 4rem;
+  }
+  .about__right--text {
+    padding-top: 2rem;
+  }
+  .about__left--img img {
+    height: 250px;
+    width: 250px;
+    margin: 0 auto;
+    display: flex;
+  }
+  .contact__container {
+    display: flex;
+    width: 100%;
+  }
+  .contact__case {
+    width: 33.33%;
+    border: none;
+  }
 }
