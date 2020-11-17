@@ -58,9 +58,9 @@ class Carousel{
       nextBtn.addEventListener('click', this.next.bind(this))
       prevBtn.addEventListener('click', this.prev.bind(this))
       
-      if (this.options.loop === false){
-        return
-      }
+      // if (this.options.loop === false){
+      //   return
+      // }
 
       this.onMove(index => {
         if (index === 0) {
