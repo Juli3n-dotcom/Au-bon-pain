@@ -6,6 +6,7 @@
     <title>Au Bon Pain | Boulangerie</title>
     <link rel="icon" href="assets/img/logo_white.png">
     <link rel="stylesheet" href="assets/css/style.css"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="assets/js/carousel.js" async></script>
 </head>
 <body>
@@ -96,19 +97,7 @@
         </div>
 
     </section>
-        
-        <!-- <section class="product" id="product">
-                <h2 class="part__title title__white">Hummm... du bon pain</h2>
-                <div class="wrapper">
-                    <div class="product__container" v-for="item in products">
-                        <div class="product__case" :style="{ backgroundImage: 'url(' + item.image.source + ')', }">
-                            <h3 class="product__name">{{item.name}}</h3>
-                            
-                        </div>
-                    </div>
-                </div>
-            </section> -->
-        
+               
     <section class="value" id="value">
         <h2 class="part__title">Nos Valeurs</h2>
 
@@ -133,6 +122,58 @@
         </div>
 
     </section>
+
+    <section class="contact" id="contact">
+        <h2 class="part__title title__white">Et si nous restions en contact?</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam.
+        </p>
+        <div class="contact__form">
+            <form>
+                <input type="text" name="" placeholder="Full Name">
+                <input type="email" name="" placeholder="Email">
+                <textarea placeholder="Your Message"></textarea>
+                <button type="submit" class="form_btn" value="Send">Send</button>
+            </form>
+        </div>
+        <div class="contact__link">
+            <h4>Nous contacter</h4>
+            <div class="contact__container">
+                <div class="contact__case">
+                    <h3>
+                        <i class="fa fa-map-marker"></i>
+                        Adresse
+                    </h3>
+                    <p>
+                        13 rue de la baguette
+                        75016 Paris
+                    </p>
+                </div>
+                <div class="contact__case">
+                    
+                    <h3>
+                        <i class="fa fa-phone"></i>
+                        Téléphone
+                    </h3>
+                    <p>
+                       01.08.10.20.17
+                    </p>
+                </div>
+                <div class="contact__case">
+                    <h3><i class="fa fa-envelope-o"></i>
+                        Email
+                    </h3>
+                    <p>
+                        contact@aubonpain.fr
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="copyright">
+        <p>Copyright 2020 Julien Quentier, All Right Reserved</p>
+    </div>
 
 </div> <!-- fin #app-->
     
@@ -261,7 +302,7 @@
                 ]
                 },
             })
-    </script>
+</script>
 <script src="assets/js/app.js" async></script>
 </body>
 </html>
