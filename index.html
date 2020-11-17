@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no" />
     <title>Au Bon Pain | Boulangerie</title>
     <link rel="icon" href="assets/img/logo_white.png">
     <link rel="stylesheet" href="assets/css/style.css"> 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="assets/js/carousel.js" async></script>
+    <script src="assets/js/carousel.js"></script>
 </head>
 <body>
     <header>
@@ -69,7 +70,7 @@
 
         <div id="carousel">
             <div class="product__container" v-for="item in products">
-                <div class="product__case" :style="{ backgroundImage: 'url(' + item.image.source + ')', }">
+                <div class="product__case":style="{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),url(' + item.image.source + ')' }">
                     <h3 class="product__name">{{item.name}}</h3>
                 </div>
             </div>
@@ -162,7 +163,7 @@
                         <i class="fa fa-phone"></i>
                         Téléphone
                     </h3>
-                    <p>
+                    <p class="contact__phone">
                        01.08.10.20.17
                     </p>
                 </div>

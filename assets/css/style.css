@@ -332,6 +332,10 @@ header.sticky {
   font-family: var(--roboto);
   margin: 1rem;
 }
+.contact .contact__phone {
+  text-decoration: none;
+  color: var(--light-white);
+}
 
 .contact__form {
   min-width: 60%;
